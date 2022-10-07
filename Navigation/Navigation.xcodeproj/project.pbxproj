@@ -17,6 +17,15 @@
 		58255C5A28AB8FA800132A59 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58255C5928AB8FA800132A59 /* PostViewController.swift */; };
 		58255C5C28ABA4FF00132A59 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58255C5B28ABA4FF00132A59 /* Data.swift */; };
 		58255C5E28ACDE0C00132A59 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58255C5D28ACDE0C00132A59 /* InfoViewController.swift */; };
+		58255C8528AF74A600132A59 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58255C8428AF74A600132A59 /* ProfileHeaderView.swift */; };
+		5851DED428D1DD2F002486CE /* ProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5851DED328D1DD2F002486CE /* ProfileTableHeaderView.swift */; };
+		585EABE628C0D6AC007EEAB0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585EABE528C0D6AC007EEAB0 /* LogInViewController.swift */; };
+		58625F1528D485400036648F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58625F1428D485400036648F /* PostTableViewCell.swift */; };
+		58AE3BBA28E5981400CBE140 /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE3BB928E5981400CBE140 /* ImageCollection.swift */; };
+		58AE3BCF28E70A0D00CBE140 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE3BCD28E70A0D00CBE140 /* PhotosTableViewCell.swift */; };
+		58AE3BD528E70C5300CBE140 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE3BD328E70C5300CBE140 /* PhotosCollectionViewCell.swift */; };
+		58AE3BDA28ED9E9600CBE140 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE3BD928ED9E9600CBE140 /* PhotosViewController.swift */; };
+		58AE3BDC28EF2B4A00CBE140 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE3BDB28EF2B4A00CBE140 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,15 @@
 		58255C5928AB8FA800132A59 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		58255C5B28ABA4FF00132A59 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		58255C5D28ACDE0C00132A59 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		58255C8428AF74A600132A59 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		5851DED328D1DD2F002486CE /* ProfileTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableHeaderView.swift; sourceTree = "<group>"; };
+		585EABE528C0D6AC007EEAB0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		58625F1428D485400036648F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		58AE3BB928E5981400CBE140 /* ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollection.swift; sourceTree = "<group>"; };
+		58AE3BCD28E70A0D00CBE140 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		58AE3BD328E70C5300CBE140 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		58AE3BD928ED9E9600CBE140 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		58AE3BDB28EF2B4A00CBE140 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 		58255C3E28AB855B00132A59 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				58255C8328AF747000132A59 /* Profile */,
 				58255C5328AB868100132A59 /* Applications */,
 				58255C5428AB86A400132A59 /* Controllers */,
 				58255C4828AB855C00132A59 /* Assets.xcassets */,
@@ -87,12 +106,28 @@
 			children = (
 				58255C4328AB855B00132A59 /* MainTapBarViewController.swift */,
 				58255C5528AB8AC300132A59 /* FeedViewController.swift */,
-				58255C5728AB8ACF00132A59 /* ProfileViewController.swift */,
 				58255C5928AB8FA800132A59 /* PostViewController.swift */,
 				58255C5D28ACDE0C00132A59 /* InfoViewController.swift */,
 				58255C5B28ABA4FF00132A59 /* Data.swift */,
+				58AE3BB928E5981400CBE140 /* ImageCollection.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58255C8328AF747000132A59 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				58255C5728AB8ACF00132A59 /* ProfileViewController.swift */,
+				58AE3BD928ED9E9600CBE140 /* PhotosViewController.swift */,
+				58255C8428AF74A600132A59 /* ProfileHeaderView.swift */,
+				585EABE528C0D6AC007EEAB0 /* LogInViewController.swift */,
+				5851DED328D1DD2F002486CE /* ProfileTableHeaderView.swift */,
+				58625F1428D485400036648F /* PostTableViewCell.swift */,
+				58AE3BCD28E70A0D00CBE140 /* PhotosTableViewCell.swift */,
+				58AE3BD328E70C5300CBE140 /* PhotosCollectionViewCell.swift */,
+				58AE3BDB28EF2B4A00CBE140 /* test.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,14 +200,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AE3BCF28E70A0D00CBE140 /* PhotosTableViewCell.swift in Sources */,
+				58AE3BDC28EF2B4A00CBE140 /* test.swift in Sources */,
+				58AE3BDA28ED9E9600CBE140 /* PhotosViewController.swift in Sources */,
 				58255C5C28ABA4FF00132A59 /* Data.swift in Sources */,
+				58AE3BBA28E5981400CBE140 /* ImageCollection.swift in Sources */,
 				58255C5A28AB8FA800132A59 /* PostViewController.swift in Sources */,
 				58255C4428AB855B00132A59 /* MainTapBarViewController.swift in Sources */,
 				58255C4028AB855B00132A59 /* AppDelegate.swift in Sources */,
+				58255C8528AF74A600132A59 /* ProfileHeaderView.swift in Sources */,
 				58255C5828AB8ACF00132A59 /* ProfileViewController.swift in Sources */,
 				58255C5628AB8AC300132A59 /* FeedViewController.swift in Sources */,
 				58255C5E28ACDE0C00132A59 /* InfoViewController.swift in Sources */,
+				585EABE628C0D6AC007EEAB0 /* LogInViewController.swift in Sources */,
+				5851DED428D1DD2F002486CE /* ProfileTableHeaderView.swift in Sources */,
+				58AE3BD528E70C5300CBE140 /* PhotosCollectionViewCell.swift in Sources */,
 				58255C4228AB855B00132A59 /* SceneDelegate.swift in Sources */,
+				58625F1528D485400036648F /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +267,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -284,6 +329,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -311,8 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35HH4ULT9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +374,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Julia.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,8 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F35HH4ULT9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,6 +403,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.Julia.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
